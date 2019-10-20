@@ -5,6 +5,7 @@
 $if(phone)$    fromphone,$endif$           % show phone number
 $if(email)$    fromemail,$endif$           % show email
 $if(fromlogo)$    fromlogo,$endif$            % show logo in letter head
+    parskip=half,        % no parindent, but parskip
     version=last,        % latest version of KOMA letter
 $for(letteroption)$
     $letteroption$$sep$,
@@ -14,8 +15,6 @@ $endfor$
 \usepackage[ngerman]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-
-\usepackage{parskip}
 
 \usepackage{csquotes} % German quotation marks
 
